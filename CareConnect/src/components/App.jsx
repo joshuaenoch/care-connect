@@ -1,33 +1,36 @@
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
-import "../App.css";
-import {app} from '../firebase.js';
+import { app } from "../firebase.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignInSignUp from "../pages/SignIn_SignUp.jsx";
+import GamePage from "../pages/GamePage.jsx";
+import NavBar from "./NavBar.jsx";
+import Footer from "./Footer.jsx";
+import Home from "./Home";
+import CaregiverPage from "../pages/CaregiverPage";
+
 function App() {
   const [count, setCount] = useState(0);
 
-  console.log(app.name)
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <main>
+        <Router>
+          <header>
+            <NavBar />
+          </header>
+          <Routes>
+            <Route path="/SignIn_SignUp" element={<SignInSignUp />} />
+            <Route path="/GamePage" element={<GamePage />} />
+            <Route path="/CaregiverPage" element={<CaregiverPage />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }
 

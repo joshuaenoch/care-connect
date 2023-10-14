@@ -13,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "care-connect-proto-v1.appspot.com",
   messagingSenderId: "889650575658",
   appId: "1:889650575658:web:c149b1460b7b79820c8653",
-  measurementId: "G-32949LZE3P"
+  measurementId: "G-32949LZE3P",
 };
 
 // Initialize Firebase
