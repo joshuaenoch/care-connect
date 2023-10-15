@@ -41,3 +41,28 @@
 .game-item:hover {
   background-color: lightskyblue; /* Lighter gray on hover */
 }
+
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 2px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.sudoku-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.sudoku-container {
+  margin-top: 250px;
+}

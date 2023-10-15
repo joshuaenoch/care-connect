@@ -1,0 +1,5 @@
+Todo:
+
+Make it so that site links won't bring the user out the web app
+Find better links for Crossword and WordSearch that have a simpler mobile display
+Fix the spacing/styling issues

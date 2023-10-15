@@ -10,7 +10,7 @@ import Footer from "./Footer.jsx";
 import Home from "./Home";
 import Crossword from "../pages/Games/Crossword.jsx";
 import Sudoku from "../pages/Games/Sudoku.jsx";
-import Trivia from "../pages/Games/Trivia.jsx";
+import WordSearch from "../pages/Games/WordSearch.jsx";
 import CaregiverPage from "../pages/CaregiverPage";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/crossword" element={<Crossword />} />
             <Route path="/sudoku" element={<Sudoku />} />
-            <Route path="/trivia" element={<Trivia />} />
+            <Route path="/wordsearch" element={<WordSearch />} />
           </Routes>
           <Footer />
         </Router>

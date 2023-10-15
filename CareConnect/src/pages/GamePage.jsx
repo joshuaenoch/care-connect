@@ -13,16 +13,16 @@ export default function GamePage() {
       <div className="title">Select activity</div>
       <ul className="game-list">
         <li className="game-item" onClick={() => handleClick("/crossword")}>
-          <img src="../public/images/crossword.png" alt="testing" />
+          <img src="../public/images/crossword.png" alt="Crossword img" />
           Crossword
         </li>
         <li className="game-item" onClick={() => handleClick("/sudoku")}>
-          <img src="../public/images/sudoku.jpg" alt="test" />
+          <img src="../public/images/sudoku.jpg" alt="Sudoku img" />
           Sudoku
         </li>
-        <li className="game-item" onClick={() => handleClick("/trivia")}>
-          <img src="../public/images/trivia.jpg" alt="Trivia" style={{ width: "200px", height: "200px" }}/>
-          Trivia
+        <li className="game-item" onClick={() => handleClick("/wordsearch")}>
+          <img src="../public/images/wordsearch.png" alt="Word Search img"/>
+          Word Search
         </li>
       </ul>
     </div>
