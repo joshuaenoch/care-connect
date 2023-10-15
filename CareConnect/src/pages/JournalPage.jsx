@@ -20,7 +20,8 @@ export default function JournalPage() {
   const handleSaveEntry = () => {
     if (text.trim() !== '') {
       const timestamp = new Date().toLocaleDateString();
-      setEntries([...entries, { text, timestamp }]);
+      // Add new entries to the beginning of the array
+      setEntries([{ text, timestamp }, ...entries]);
       setText('');
     }
   };
@@ -47,7 +48,7 @@ export default function JournalPage() {
         <h2 style={{ marginTop: "25px", textAlign: "center" }}>Past entries:</h2>
         <ul>
           {entries.map((entry, index) => (
-            <li style={{ marginTop: "10px", textAlign: "center" }} key={index}>
+            <li style={{ marginTop: "10px", textAlign: "center", fontStyle: "italic" }} key={index}>
               {entry.text} - {entry.timestamp}
             </li>
           ))}

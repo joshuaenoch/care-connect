@@ -26,12 +26,14 @@ const dummyCaregiverData = [
 function CaregiverPage() {
   return (
     <>
-      <h1>Caregivers</h1>
-      <input type="text"></input>
-      <h2>Assigned Caregivers</h2>
-      <CaregiverCarousel caregivers={dummyCaregiverData.slice(2)} />
-      <h2>UW Caregivers</h2>
-      <CaregiverCarousel caregivers={dummyCaregiverData} />
+      <h1 style={{padding:"115px 0px 20px 0px", textAlign: "center"}}>Caregivers</h1>
+      <input type="text" style={{display: "block", margin:"0 auto"}} placeholder="Search caregivers..."></input>
+      <div style={{margin: "30px auto 90px auto", maxWidth: "200px"}}>
+        <h2 style={{marginBottom:"10px"}}>Assigned Caregivers</h2>
+        <CaregiverCarousel caregivers={dummyCaregiverData.slice(2)} />
+        <h2 style={{margin:"20px 0px 10px 0px"}}>UW Caregivers</h2>
+        <CaregiverCarousel caregivers={dummyCaregiverData} />
+      </div>
     </>
   );
 }
