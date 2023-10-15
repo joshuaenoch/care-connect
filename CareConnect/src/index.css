@@ -1,7 +1,7 @@
-/* tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* tailwind directives */
 
 /* NavBar css */
 
@@ -24,7 +24,7 @@ button {
   border-radius: 2em;
 }
 
-.nav-container{
+.nav-container {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -41,6 +41,7 @@ nav {
   color: white;
   padding: 25px;
   top: 0px;
+  z-index: 10;
 }
 
 .nav-foot {
@@ -85,10 +86,12 @@ nav li a {
   justify-content: center;
 }
 
-.nav-links a:hover, .nav-links a:focus, .nav-links a:active {
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
   color: #f0f0f0;
-  border-bottom: .4rem solid #f0f0f0;
-  transition: ease-out .25s;
+  border-bottom: 0.4rem solid #f0f0f0;
+  transition: ease-out 0.25s;
 }
 
 h1 {

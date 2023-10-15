@@ -21,7 +21,7 @@ export default function GamePage() {
           Sudoku
         </li>
         <li className="game-item" onClick={() => handleClick("/wordsearch")}>
-          <img src="../public/images/wordsearch.png" alt="Word Search img"/>
+          <img src="../public/images/wordsearch.png" alt="Word Search img" />
           Word Search
         </li>
       </ul>
