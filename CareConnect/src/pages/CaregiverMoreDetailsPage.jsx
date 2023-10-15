@@ -7,7 +7,7 @@ function CaregiverMoreDetails() {
 
     return ( 
         <>
-            <img src={caregiver.image} className="object-cover w-full h-2/5"/>
+            <img src={caregiver.image} className="object-cover w-full h-22 pt-10"/>
             <div className="mx-4 pb-40">
                 <Card className="my-2 py-2 text-center">
                     <h1 className="font-extrabold text-3xl">{caregiver.name}</h1>
