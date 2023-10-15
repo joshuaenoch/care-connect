@@ -28,7 +28,12 @@ function CaregiverPage() {
   return (
     <div className=" text-center pt-20">
       <h1 className="font-extrabold text-3xl py-4">Caregivers</h1>
-      <TextField id="outlined-basic" label="Search" variant="outlined" className="b bg-white"/>
+      <TextField
+        id="outlined-basic"
+        label="Search"
+        variant="outlined"
+        className="b bg-white"
+      />
       <h2 className="font-bold text-2xl py-4">Assigned Caregivers</h2>
       <CaregiverCarousel caregivers={dummyCaregiverData.slice(2)} />
       <h2 className="font-bold text-2xl py-4">UW Caregivers</h2>

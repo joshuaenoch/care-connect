@@ -18,7 +18,7 @@ export const getStars = (rating) => {
 };
 
 function CaregiverCarousel(props) {
-  const caregiversArrangement = useMemo(()=>{
+  const caregiversArrangement = useMemo(() => {
     let chunks = [];
     let chunkSize = 2;
 
@@ -33,7 +33,7 @@ function CaregiverCarousel(props) {
       animation="slide"
       cycleNavigation={true}
       fullHeightHover={true}
-      navButtonsAlwaysVisible={caregiversArrangement.length>1}
+      navButtonsAlwaysVisible={caregiversArrangement.length > 1}
       autoPlay={false}
       swipe={true}
       indicators={false}
@@ -41,21 +41,28 @@ function CaregiverCarousel(props) {
       className="mx-10"
     >
       {caregiversArrangement.map((items, i) => {
-        return(
-        <div key={i} className="flex flex-row gap-4 h-40">
-          {items.map((item, i) => {
-            return (
-              <Link key={i+"1"} to={"/CaregiverMoreDetails"} className="w-1/2 h-full">
-                <Card className="h-full">
-                  <img src={item.image} className="object-cover w-full h-3/5"/>
-                  <h3>{item.name}</h3>
-                  {getStars(item.rating)}
-                </Card>
-              </Link>
-            )
-          })}
-        </div>
-        )
+        return (
+          <div key={i} className="flex flex-row gap-4 h-40">
+            {items.map((item, i) => {
+              return (
+                <Link
+                  key={i + "1"}
+                  to={"/CaregiverMoreDetails"}
+                  className="w-1/2 h-full"
+                >
+                  <Card className="h-full">
+                    <img
+                      src={item.image}
+                      className="object-cover w-full h-3/5"
+                    />
+                    <h3>{item.name}</h3>
+                    {getStars(item.rating)}
+                  </Card>
+                </Link>
+              );
+            })}
+          </div>
+        );
       })}
     </Carousel>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function NavBar() {
   const [isSOSNoticeVisible, setSOSNoticeVisible] = useState(false);
@@ -30,7 +30,13 @@ function NavBar() {
         </li>
       </nav>
       {isSOSNoticeVisible && (
-        <div style={{ backgroundColor: "red", color: "white", textAlign: "center" }}>
+        <div
+          style={{
+            backgroundColor: "red",
+            color: "white",
+            textAlign: "center",
+          }}
+        >
           Your caregiver has been notified!
         </div>
       )}
