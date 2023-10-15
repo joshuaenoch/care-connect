@@ -21,7 +21,7 @@ export default function GamePage() {
           Sudoku
         </li>
         <li className="game-item" onClick={() => handleClick("/trivia")}>
-          <img src="" alt="Trivia" />
+          <img src="../public/images/trivia.jpg" alt="Trivia" style={{ width: "200px", height: "200px" }}/>
           Trivia
         </li>
       </ul>

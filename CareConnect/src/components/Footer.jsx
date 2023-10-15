@@ -17,7 +17,7 @@ function Footer() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/SignInSignUp">
+              <NavLink className="nav-link" to="/SignIn">
                 Sign up
               </NavLink>
             </li>

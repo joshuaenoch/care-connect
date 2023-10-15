@@ -22,6 +22,10 @@ function App() {
           <header>
             <NavBar />
           </header>
+        </Router>
+      </main>
+      <footer>
+        <Router>
           <Routes>
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/SignIn" element={<SignIn />} />
@@ -32,10 +36,6 @@ function App() {
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/trivia" element={<Trivia />} />
           </Routes>
-        </Router>
-      </main>
-      <footer>
-        <Router>
           <Footer />
         </Router>
       </footer>
