@@ -1,8 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Crossword from "./Games/Crossword.jsx";
-import Sudoku from "./Games/Sudoku.jsx";
-import Trivia from "./Games/Trivia.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function GamePage() {
@@ -12,9 +9,9 @@ export default function GamePage() {
   };
 
   return (
-    <Router>
+    <div>
       <div>
-          Select activity
+        Select activity
       </div>
       <nav>
           <ul>
@@ -32,11 +29,6 @@ export default function GamePage() {
             </li>
           </ul>
       </nav>
-      <Routes>
-        <Route path="/crossword" element={<Crossword />} />
-        <Route path="/sudoku" element={<Sudoku />} />
-        <Route path="/trivia" element={<Trivia />} />
-      </Routes>
-    </Router>
+    </div>
   );
 }

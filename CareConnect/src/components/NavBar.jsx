@@ -22,8 +22,8 @@ function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/SignInSighUp">
-                SignIn
+              <NavLink className="nav-link" to="/SignInSignUp">
+                Sign up
               </NavLink>
             </li>
           </ul>
