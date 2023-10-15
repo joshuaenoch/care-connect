@@ -10,6 +10,7 @@ import HomePage from "../pages/HomePage.jsx";
 import GamePage from "../pages/GamePage.jsx";
 import CaregiverPage from "../pages/CaregiverPage";
 import JournalPage from "../pages/JournalPage";
+import AccountPage from "../pages/AccountPage";
 import Crossword from "../pages/Games/Crossword.jsx";
 import Sudoku from "../pages/Games/Sudoku.jsx";
 import WordSearch from "../pages/Games/WordSearch.jsx";
@@ -36,6 +37,7 @@ function App() {
             <Route path="/crossword" element={<Crossword />} />
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/wordsearch" element={<WordSearch />} />
+            <Route path="/AccountPage" element={<AccountPage />} />
           </Routes>
           <Footer />
         </Router>

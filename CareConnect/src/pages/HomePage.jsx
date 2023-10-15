@@ -26,7 +26,7 @@ export default function HomePage() {
                     </button>
                 </div>
             </div>
-            <div class="image-container">
+            <div className="image-container">
                 <img src="../public/images/avatar.png" alt="Avatar" width="150px" height="150px"/>
             </div>
             <div>
