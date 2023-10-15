@@ -9,24 +9,26 @@ export default function HomePage() {
     };
 
     return (
-        <div className="container">
-            <h2 className = "title">Welcome _user name_!</h2>
+        <div className="home-container">
+            <h2 className = "title" style={{margin: "60px 0px 60px 0px"}}>Welcome _user name_!</h2>
             <div className = "ofthedays">
-                <div>Memory of the day:</div>
-                <div style={{marginBottom:"20px", textAlign:"center"}}>"Today I played bingo at the mall with my granddaughter" - 9/4/2023</div>
-            </div>
-            <div className = "ofthedays">
-                <div>Activity of the day:</div>
-                <button
-                    style={{ backgroundColor: "darkblue", color: "white", marginTop: "10px", marginBottom: "20px" }}
-                    onClick={() => handleClick("/sudoku")}
-                >
-                    Play sudoku
-                </button>
+                <div className = "oftheday">
+                    <div>Memory of the day:</div>
+                    <div style={{marginBottom:"60px", textAlign:"center"}}>"Today I played bingo at the mall with my granddaughter" - 9/4/2023</div>
+                </div>
+                <div className = "oftheday">
+                    <div>Activity of the day:</div>
+                    <button
+                        style={{ backgroundColor: "darkblue", color: "white", marginTop: "10px", marginBottom: "60px" }}
+                        onClick={() => handleClick("/sudoku")}
+                    >
+                        Play sudoku
+                    </button>
+                </div>
             </div>
             <div>__caregiver__ would love to talk!</div>
             <button
-                style={{ backgroundColor: "darkblue", color: "white", marginTop: "10px", marginBottom: "10px" }}
+                style={{ backgroundColor: "darkblue", color: "white", marginTop: "10px", marginBottom: "60px" }}
                 onClick={() => handleClick("/CaregiverPage")}
             >
                 Message __caregiver__

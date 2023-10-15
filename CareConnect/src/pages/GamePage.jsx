@@ -10,7 +10,7 @@ export default function GamePage() {
 
   return (
     <div className="container">
-      <div className="title">Select activity</div>
+      <div className="title" style={{margin:"30px 0px 30px 0px"}}>Select activity</div>
       <ul className="game-list">
         <li className="game-item" onClick={() => handleClick("/crossword")}>
           <img src="../public/images/crossword.png" alt="Crossword img" />
