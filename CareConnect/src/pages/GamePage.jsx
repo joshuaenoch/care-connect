@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./GamePage.css"; // Import your CSS file
+import "./GamePage.css";
 
 export default function GamePage() {
   const navigate = useNavigate();

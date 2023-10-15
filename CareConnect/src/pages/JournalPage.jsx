@@ -10,7 +10,6 @@ export default function JournalPage() {
   ];
 
   const [text, setText] = useState('');
-  // Initialize the entries state with the default data
   const [entries, setEntries] = useState(initialEntries);
 
   const handleTextChange = (event) => {
@@ -20,7 +19,6 @@ export default function JournalPage() {
   const handleSaveEntry = () => {
     if (text.trim() !== '') {
       const timestamp = new Date().toLocaleDateString();
-      // Add new entries to the beginning of the array
       setEntries([{ text, timestamp }, ...entries]);
       setText('');
     }

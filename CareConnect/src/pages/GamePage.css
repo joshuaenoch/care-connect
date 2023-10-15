@@ -4,16 +4,14 @@
   align-items: center;
   justify-content: center;
   padding-top: 50px;
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  overflow-y: auto;
 }
 
-/* Style the "Select activity" text */
 .title {
   font-size: 24px;
   margin-bottom: 50px;
 }
 
-/* Style the navigation list */
 .game-list {
   list-style: none;
   padding: 0;
@@ -22,11 +20,10 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  max-height: 100%; /* Limit the height of the list to the container height */
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: 100%;
+  overflow-y: auto;
 }
 
-/* Style the list items (boxes) */
 .game-item {
   border-radius: 8px;
   margin-bottom: 30px;
@@ -37,9 +34,8 @@
   height: 200px;
 }
 
-/* Add hover effect for list items */
 .game-item:hover {
-  background-color: lightskyblue; /* Lighter gray on hover */
+  background-color: lightskyblue;
 }
 
 .sudoku-board {

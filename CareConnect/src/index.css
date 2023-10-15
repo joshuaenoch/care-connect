@@ -3,8 +3,6 @@
 @tailwind utilities;
 /* tailwind directives */
 
-/* NavBar css */
-
 body {
   background-image: url("./public/images/background.jpg");
   background-size: cover;
@@ -97,8 +95,6 @@ nav li a {
 h1 {
   font-size: 3em;
 }
-
-/* Footer css */
 
 .footer {
   position: fixed;
