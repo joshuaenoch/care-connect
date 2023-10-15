@@ -70,6 +70,10 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  margin: 0px 10px 0px 10px;
+}
+
 nav li a {
   display: inline-block;
   margin: 0 0.5rem;

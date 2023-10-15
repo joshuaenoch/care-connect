@@ -6,9 +6,8 @@ export default function Crossword() {
       <iframe
         title="Web Crossword Puzzle"
         src="https://www.bestcrosswords.com/"
-        width="100%"
-        height="600px"
-      ></iframe>
+        style={{ width: "100%", height: "100vh" }}
+      />
     </div>
   );
 }

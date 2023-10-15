@@ -27,7 +27,7 @@ export default function JournalPage() {
 
   return (
     <div className="container">
-      <div style={{ fontSize: "20px", marginTop: "30px", marginBottom: "20px" }}>
+      <div style={{ fontSize: "20px", marginTop: "40px", marginBottom: "20px" }}>
         What's on your mind today?
       </div>
       <textarea
@@ -44,7 +44,7 @@ export default function JournalPage() {
         Save Entry
       </button>
       <div>
-        <h2 style={{ marginTop: "10px", textAlign: "center" }}>Past entries:</h2>
+        <h2 style={{ marginTop: "25px", textAlign: "center" }}>Past entries:</h2>
         <ul>
           {entries.map((entry, index) => (
             <li style={{ marginTop: "10px", textAlign: "center" }} key={index}>
