@@ -4,7 +4,7 @@
 /* tailwind directives */
 
 body {
-  background-image: url("./public/images/background.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/care-connect-proto-v1.appspot.com/o/background.jpg?alt=media&token=305fdbc8-6e24-417c-be1d-204453e60d89");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

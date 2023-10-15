@@ -36,7 +36,7 @@ export default function HomePage() {
       </div>
       <div className="image-container">
         <img
-          src="../public/images/avatar.png"
+          src="https://firebasestorage.googleapis.com/v0/b/care-connect-proto-v1.appspot.com/o/avatar.png?alt=media&token=7047059a-f0d7-4cab-bcb6-3ce6479da4c8"
           alt="Avatar"
           width="150px"
           height="150px"
