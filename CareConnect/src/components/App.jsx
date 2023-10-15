@@ -32,6 +32,7 @@ function App() {
             <Route path="/CaregiverPage" element={<CaregiverPage />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/JournalPage" element={<JournalPage />}/>
+            <Route path="/CaregiverPage" element={<CaregiverPage />}/>
             <Route path="/crossword" element={<Crossword />} />
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/wordsearch" element={<WordSearch />} />

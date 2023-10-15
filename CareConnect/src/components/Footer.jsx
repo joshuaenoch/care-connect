@@ -22,6 +22,11 @@ function Footer() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/CaregiverPage">
+                Caregiver
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/SignIn">
                 Sign up
               </NavLink>
