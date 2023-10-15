@@ -35,7 +35,9 @@ function App() {
         </Router>
       </main>
       <footer>
-        <Footer />
+        <Router>
+          <Footer />
+        </Router>
       </footer>
     </div>
   );
