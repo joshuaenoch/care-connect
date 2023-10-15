@@ -5,6 +5,18 @@
 
 /* NavBar css */
 
+button {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(8, 41, 74);
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2em;
+}
+
 nav {
   height: 110px;
   justify-content: space-between;
@@ -16,6 +28,12 @@ nav {
   color: white;
   padding: 25px;
   top: 0px;
+}
+
+.nav-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .connect {
@@ -30,7 +48,7 @@ nav {
 .nav-bar {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
 }
 
 nav ul {
@@ -44,6 +62,12 @@ nav li a {
   margin: 0 0.5rem;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav-links a:hover, .nav-links a:focus, .nav-links a:active {
   color: #f0f0f0;
   border-bottom: .4rem solid #f0f0f0;
@@ -54,3 +78,10 @@ h1 {
   font-size: 3em;
 }
 
+/* Footer css */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
