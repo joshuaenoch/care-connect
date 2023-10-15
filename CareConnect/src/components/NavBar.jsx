@@ -3,12 +3,12 @@ function NavBar() {
     <div className = "nav-container">
        <nav>
         <li className="company-name">
-          <h1>
+          <div style={{fontSize:"30px"}}>
             Care<span className="connect">Connect</span>
-          </h1>
+          </div>
         </li>
         <li className="company-name">
-          <button>SOS</button>
+          <button style={{backgroundColor:"darkred", color:"white"}}>SOS</button>
         </li>
       </nav>
     </div>
