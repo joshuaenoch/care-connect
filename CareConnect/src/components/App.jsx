@@ -4,41 +4,41 @@ import { app } from "../firebase.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from "../pages/SignIn.jsx";
 import SignUp from "../pages/SignUp.jsx";
-import GamePage from "../pages/GamePage.jsx";
 import NavBar from "./NavBar.jsx";
 import Footer from "./Footer.jsx";
-import Home from "./Home";
+import HomePage from "../pages/HomePage.jsx";
+import GamePage from "../pages/GamePage.jsx";
+import CaregiverPage from "../pages/CaregiverPage";
+import JournalPage from "../pages/JournalPage";
 import Crossword from "../pages/Games/Crossword.jsx";
 import Sudoku from "../pages/Games/Sudoku.jsx";
 import WordSearch from "../pages/Games/WordSearch.jsx";
-import CaregiverPage from "../pages/CaregiverPage";
 
 function App() {
 
   return (
     <div>
-      <main>
-        <Router>
+      <Router>
           <header>
             <NavBar />
           </header>
         </Router>
-      </main>
-      <footer className = "">
+      <main>
         <Router>
           <Routes>
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/SignIn" element={<SignIn />} />
             <Route path="/GamePage" element={<GamePage />} />
             <Route path="/CaregiverPage" element={<CaregiverPage />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/JournalPage" element={<JournalPage />}/>
             <Route path="/crossword" element={<Crossword />} />
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/wordsearch" element={<WordSearch />} />
           </Routes>
           <Footer />
         </Router>
-      </footer>
+      </main>
     </div>
   );
 }

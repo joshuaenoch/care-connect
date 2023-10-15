@@ -7,13 +7,18 @@ function Footer() {
         <div className="nav-links">
           <ul className="nav-bar">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Home">
+              <NavLink className="nav-link" to="/">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/GamePage">
-                GamePage
+                Activities
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/JournalPage">
+                Journal
               </NavLink>
             </li>
             <li className="nav-item">

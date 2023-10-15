@@ -96,3 +96,7 @@ h1 {
 .container {
   padding: 90px 50px 0px 50px;
 }
+
+textarea:focus {
+  outline: none;
+}
