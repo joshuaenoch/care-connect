@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <div>
+    <div className = "nav-container">
        <nav>
         <li className="company-name">
           <h1>
