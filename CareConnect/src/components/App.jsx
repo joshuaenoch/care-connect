@@ -24,7 +24,7 @@ function App() {
           </header>
         </Router>
       </main>
-      <footer>
+      <footer className = "">
         <Router>
           <Routes>
             <Route path="/SignUp" element={<SignUp />} />

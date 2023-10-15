@@ -81,7 +81,7 @@ h1 {
 /* Footer css */
 
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
