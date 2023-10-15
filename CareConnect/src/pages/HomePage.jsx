@@ -10,7 +10,7 @@ export default function HomePage() {
 
     return (
         <div className="home-container">
-            <h2 className = "title" style={{margin: "50px 0px 40px 0px"}}>Welcome _user name_!</h2>
+            <h2 className = "title" style={{margin: "50px 0px 50px 0px"}}>Welcome _user name_!</h2>
             <div className = "ofthedays">
                 <div className = "oftheday">
                     <div>Memory of the day:</div>
@@ -27,7 +27,7 @@ export default function HomePage() {
                 </div>
             </div>
             <div class="image-container">
-                <img src="../public/images/avatar.jpg" alt="Avatar" width="150px" height="150px"/>
+                <img src="../public/images/avatar.png" alt="Avatar" width="150px" height="150px"/>
             </div>
             <div>
                 __caregiver__ would love to talk!
@@ -36,7 +36,7 @@ export default function HomePage() {
                 style={{ backgroundColor: "darkblue", color: "white", marginTop: "10px", marginBottom: "60px" }}
                 onClick={() => handleClick("/CaregiverPage")}
             >
-                Message __caregiver__
+                Message your caregiver
             </button>
         </div>
     );
