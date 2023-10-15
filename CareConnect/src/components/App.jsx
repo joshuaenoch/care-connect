@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import { app } from "../firebase.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SignInSignUp from "../pages/SignInSignUp.jsx";
+import SignIn from "../pages/SignIn.jsx";
+import SignUp from "../pages/SignUp.jsx";
 import GamePage from "../pages/GamePage.jsx";
 import NavBar from "./NavBar.jsx";
 import Footer from "./Footer.jsx";
@@ -22,7 +23,8 @@ function App() {
             <NavBar />
           </header>
           <Routes>
-            <Route path="/SignInSignUp" element={<SignInSignUp />} />
+            <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/SignIn" element={<SignIn />} />
             <Route path="/GamePage" element={<GamePage />} />
             <Route path="/CaregiverPage" element={<CaregiverPage />} />
             <Route path="/" element={<Home />} />

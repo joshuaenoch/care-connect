@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./GamePage.css"; // Import your CSS file
 
 export default function GamePage() {
   const navigate = useNavigate();
@@ -9,26 +9,22 @@ export default function GamePage() {
   };
 
   return (
-    <div>
-      <div>
-        Select activity
-      </div>
-      <nav>
-          <ul>
-            <li onClick={() => handleClick("/crossword")}>
-              <img src="" alt="image should've been here" />
-              Crossword
-            </li>
-            <li onClick={() => handleClick("/sudoku")}>
-              <img src="" alt="image should've been here" />
-              Sudoku
-            </li>
-            <li onClick={() => handleClick("/trivia")}>
-              <img src="" alt="image should've been here" />
-              Trivia
-            </li>
-          </ul>
-      </nav>
+    <div className="container">
+      <div className="title">Select activity</div>
+      <ul className="game-list">
+        <li className="game-item" onClick={() => handleClick("/crossword")}>
+          <img src="../public/images/crossword.png" alt="testing" />
+          Crossword
+        </li>
+        <li className="game-item" onClick={() => handleClick("/sudoku")}>
+          <img src="../public/images/sudoku.jpg" alt="test" />
+          Sudoku
+        </li>
+        <li className="game-item" onClick={() => handleClick("/trivia")}>
+          <img src="" alt="Trivia" />
+          Trivia
+        </li>
+      </ul>
     </div>
   );
 }
