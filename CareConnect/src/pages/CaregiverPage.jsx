@@ -1,40 +1,39 @@
 import CaregiverCarousel from "../components/CaregiverCarousel";
+import { TextField } from "@mui/material";
 
-const dummyCaregiverData = [
+export const dummyCaregiverData = [
   {
     name: "Shirley",
-    image: "unsplash.com",
-    rating: 5,
+    image: "./public/images/Shirley.avif",
+    rating: 4,
   },
   {
     name: "Daniel",
-    image: "unsplash.com",
+    image: "./public/images/Daniel.webp",
     rating: 3,
   },
   {
     name: "Ben",
-    image: "unsplash.com",
+    image: "./public/images/Ben.webp",
     rating: 5,
   },
   {
     name: "Sarah",
-    image: "unsplash.com",
-    rating: 4,
+    image: "./public/images/Sarah.webp",
+    rating: 5,
   },
 ];
 
 function CaregiverPage() {
   return (
-    <>
-      <h1 style={{padding:"115px 0px 20px 0px", textAlign: "center"}}>Caregivers</h1>
-      <input type="text" style={{display: "block", margin:"0 auto"}} placeholder="Search caregivers..."></input>
-      <div style={{margin: "30px auto 90px auto", maxWidth: "200px"}}>
-        <h2 style={{marginBottom:"10px"}}>Assigned Caregivers</h2>
-        <CaregiverCarousel caregivers={dummyCaregiverData.slice(2)} />
-        <h2 style={{margin:"20px 0px 10px 0px"}}>UW Caregivers</h2>
-        <CaregiverCarousel caregivers={dummyCaregiverData} />
-      </div>
-    </>
+    <div className=" text-center pt-20">
+      <h1 className="font-extrabold text-3xl py-4">Caregivers</h1>
+      <TextField id="outlined-basic" label="Search" variant="outlined" className="b bg-white"/>
+      <h2 className="font-bold text-2xl py-4">Assigned Caregivers</h2>
+      <CaregiverCarousel caregivers={dummyCaregiverData.slice(2)} />
+      <h2 className="font-bold text-2xl py-4">UW Caregivers</h2>
+      <CaregiverCarousel caregivers={dummyCaregiverData} />
+    </div>
   );
 }
 

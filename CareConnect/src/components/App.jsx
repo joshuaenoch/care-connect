@@ -14,9 +14,9 @@ import AccountPage from "../pages/AccountPage";
 import Crossword from "../pages/Games/Crossword.jsx";
 import Sudoku from "../pages/Games/Sudoku.jsx";
 import WordSearch from "../pages/Games/WordSearch.jsx";
+import CaregiverMoreDetails from "../pages/CaregiverMoreDetailsPage";
 
 function App() {
-
   return (
     <div>
       <Router>
@@ -31,9 +31,10 @@ function App() {
             <Route path="/SignIn" element={<SignIn />} />
             <Route path="/GamePage" element={<GamePage />} />
             <Route path="/CaregiverPage" element={<CaregiverPage />} />
+            <Route path="/CaregiverMoreDetails" element={<CaregiverMoreDetails />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/JournalPage" element={<JournalPage />}/>
-            <Route path="/CaregiverPage" element={<CaregiverPage />}/>
+            <Route path="/Caregiver" element={<CaregiverPage />}/>
             <Route path="/crossword" element={<Crossword />} />
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/wordsearch" element={<WordSearch />} />

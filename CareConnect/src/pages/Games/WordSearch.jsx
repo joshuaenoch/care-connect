@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function WordSearch() {
-  return(
+  return (
     <div>
       <iframe
         title="Web Word Search"
